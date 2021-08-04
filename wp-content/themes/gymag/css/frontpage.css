@@ -1,0 +1,88 @@
+.home {
+    margin: 0;
+}
+.margintop {margin-top:32px}
+.card {
+    position: relative;
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+    background: #fff;
+}
+.card a {
+    color: #222;
+}
+.card-image, .card-title {
+    position: relative;
+    float: left;
+}
+.card-image {width:30%;line-height:1;}
+.card-img {min-height:72px}
+.card-title {width:70%;padding-left: 10px;}
+.card-heading {
+	font-size: 14px;
+	max-height:46px;
+	overflow:hidden;
+}
+.card-meta {
+    font-size: .75em;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.card-cato {
+    position: relative;
+    float: left;
+}
+.card-time {
+    position: relative;
+    float: right;
+}
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media (min-width: 544px) {
+	.card {
+    width: 49%;
+}
+.card:nth-of-type(2n) {
+    margin-left: 2%;
+}
+.card-image {width:100%;padding:0}
+	.card-title {width:100%}
+.card-img {width:100%}
+	.card-heading {height:46px;}
+}
+@media (min-width: 786px) {
+	.card {
+    width: 32%;
+	margin-left:2%;
+}
+.card:nth-of-type(3n+1) {
+    margin-left: 0;
+}
+}
+@media (min-width: 940px) {
+.card {
+    width: 23.5%;
+}
+	.card:nth-of-type(3n+1) {
+    margin-left: 2%;
+}
+	.card:nth-of-type(4n+1) {
+    margin-left: 0;
+}
+}
+@media (min-width: 1200px) {
+.card {
+    width: 18.4%;
+}
+	.card:nth-of-type(4n+1) {
+    margin-left: 2%;
+}
+	.card:nth-of-type(5n+1) {
+    margin-left: 0;
+}
+}
